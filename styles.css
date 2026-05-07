@@ -92,3 +92,66 @@ main {
   flex-direction: column;
   gap: 10px; 
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease; 
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: #007bff; 
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; 
+}
+
+main, nav ul, .contact-form {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  width: 100%;
+}
+
+
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .contact-form {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row; 
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .contact-form {
+    max-width: 600px; 
+    gap: 20px;
+  }
+}
