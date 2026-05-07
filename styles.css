@@ -81,3 +81,14 @@ thead th {
 tbody tr:hover {
     background-color: #f9f9f9;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
